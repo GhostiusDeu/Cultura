@@ -194,3 +194,9 @@ footer {
     margin: 0px;
     width: 400px;
 }
+
+#posts {
+    text-align: center;
+    margin-left: auto;
+    padding: 10px;
+}

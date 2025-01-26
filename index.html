@@ -3,6 +3,22 @@
 <head>
   <title>Cultura</title>
   <link rel="stylesheet" href="styles.css">
+  <style>
+    button {
+      background-color: #007BFF;
+      color: white;
+      border: none;
+      padding: 10px 15px;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+    button:hover {
+      background-color: #0056b3;
+    }
+    ul {
+      margin-left: 20px;
+    }
+  </style>
 </head>
 <body>
   <header>
@@ -56,11 +72,16 @@
 
   <section id="posts" class="section">
     <div class="container">
-      <h2>El Estado Miranda</h2>
+      <h2>Simbolos Patrios</h2>
       <div class="post">
-        <h3>Cómo crear un blog desde cero</h3>
-        <p>Hoy aprenderemos a crear un blog básico utilizando HTML y CSS. No necesitas experiencia previa, solo ganas de aprender.</p>
-        <a href="#">Leer más</a>
+        <h3>Colores de la bandera</h3>
+        <p>Los colores de la bandera son.</p>
+        <ul id="extra-info" style="display: none; text-align: left;">
+          <li>Negro: Representa a la raza negra que luchó junto a Francisco de Miranda.</li>
+          <li>Rojo: Representa la sangre derramada en la lucha independentista. También representa a los mulatos, que eran blancos con negros.</li>
+          <li>Amarillo: Representa la ganancia obtenida en la lucha por recuperar el territorio venezolano. Para Francisco de Miranda, este color era un homenaje a los indígenas.</li>
+        </ul>
+        <button id="toggle-btn">Leer más</button>
       </div>
       <div class="post">
         <h3>Mi viaje en la escritura</h3>
@@ -87,13 +108,10 @@
       <form>
         <label for="name">Nombre:</label>
         <input type="text" id="name" name="name" required>
-
         <label for="email">Correo electrónico:</label>
         <input type="email" id="email" name="email" required>
-        
         <label for="message">Mensaje:</label>
         <textarea id="message" name="message" required></textarea>
-
         <button type="submit">Enviar</button>
       </form>
     </div>
@@ -104,5 +122,21 @@
       <p>&copy; 2025 | Demo de cultura</p>
     </div>
   </footer>
+
+  <script>
+
+    const toggleBtn = document.getElementById('toggle-btn');
+    const extraInfo = document.getElementById('extra-info');
+
+    toggleBtn.addEventListener('click', () => {
+      if (extraInfo.style.display === 'none') {
+        extraInfo.style.display = 'block';
+        toggleBtn.textContent = 'Leer menos'; 
+      } else {
+        extraInfo.style.display = 'none';
+        toggleBtn.textContent = 'Leer más';
+      }
+    });
+  </script>
 </body>
 </html>
