@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <title>Cultura</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class="container" style="display: flex;align-items: center;justify-content: space-between;">
+      <img src="logo.png" alt="" style="width: 100px; height: 100px;">
+      <div style="width: 100%;margin-right: 110px;">
+        <h1 style="color: white;">El Estado Miranda</h1>
+        <nav>
+          <ul>
+            <li><a style="color: black;" href="#home">Inicio</a></li>
+            <li><a style="color: black;" href="#about">Acerca de</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <section id="home" class="section">
+    <div class="container">
+      <h2>Bienvenidos</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa ipsam, error aliquam fugiat officiis modi consequuntur, necessitatibus exercitationem eveniet quod dignissimos architecto cupiditate repellendus inventore excepturi reprehenderit tempora beatae aut?</p>
+    </div>
+  </section>
+
+  <section id="about" class="section">
+    <div class="container">
+      <div class="about-item">
+        <h2>Andrés</h2>
+      </div>
+      <div class="about-item juan-item"> <!-- Agregar una clase personalizada para Juan -->
+        <h2>Jhosue</h2>
+      </div>
+    </div>
+  
+    <div class="about-item">
+      <img src="image.jpg" alt="andres" class="imagen-andres">
+      <p>Mi nombre es <span>Andrés</span>, soy un apasionado a la informática y me encanta las computadoras y soy estudiante de la UTS.</p>
+    </div>
+    <div class="about-item">
+      <img src="image2.jpg" alt="juan" class="imagen-jhosue">
+      <p>¡Hola! Soy <span>Jhosue</span>, estudiante de la UTS y fanatico de las computadoras.</p>
+    </div>
+  </section>
+  
+  
+
+  <section id="posts" class="section">
+    <div class="container">
+      <h2>El Estado Miranda</h2>
+      <div class="post">
+        <h3>Cómo crear un blog desde cero</h3>
+        <p>Hoy aprenderemos a crear un blog básico utilizando HTML y CSS. No necesitas experiencia previa, solo ganas de aprender.</p>
+        <a href="#">Leer más</a>
+      </div>
+      <div class="post">
+        <h3>Mi viaje en la escritura</h3>
+        <p>Compartiré mi experiencia personal como escritor y cómo el blog ha cambiado mi vida.</p>
+        <a href="#">Leer más</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="services" class="section">
+    <div class="container">
+      <h2>LOREM </h2>
+      <ul>
+        <li>xxx</li>
+        <li>xxx</li>
+        <li>xxx</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="contact" class="section">
+    <div class="container">
+      <h2>Contacto</h2>
+      <form>
+        <label for="name">Nombre:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Correo electrónico:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Mensaje:</label>
+        <textarea id="message" name="message" required></textarea>
+
+        <button type="submit">Enviar</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 | Demo de cultura</p>
+    </div>
+  </footer>
+</body>
+</html>
