@@ -12,14 +12,14 @@ body {
 }
 
 .container {
-    width: 80%;
+    width: 100%;
     margin: 0 auto;
 }
 
 
 header {
     background: linear-gradient(to bottom, #000000, #D40000, #F9D400); 
-    padding: 80px 20px;
+    padding: 30px 20px;
     text-align: center;
     position: relative;
     animation: fadeInHeader 2s ease-out;
@@ -33,10 +33,24 @@ header .logo-container {
     z-index: 1000; 
 }
 
-header .logo-container img {
-    width: 170px;
+header .casique {
+    position: absolute;
+    top: -10px;
+    left: 1100px;
+    z-index: 2100; 
+}
+
+header .casique img {
+    width: 130px;
     height: auto;
-    border-radius: 20px; /* Aquí agregamos el borde redondeado */
+    border-radius: 100px; /* Aquí agregamos el borde redondeado */
+    margin: 20px 0px 0px 20px;
+}
+
+header .logo-container img {
+    width: 130px;
+    height: auto;
+    border-radius: 100px; /* Aquí agregamos el borde redondeado */
     margin: 20px 0px 0px 20px;
 }
 
@@ -51,7 +65,7 @@ header h1 {
     font-size: 3.5rem;
     font-weight: 700;
     text-transform: uppercase;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
     animation: slideInHeader 1.5s ease-out;
 }
 
