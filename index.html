@@ -1,103 +1,95 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <title>Cultura</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cultura - Estado Miranda</title>
   <link rel="stylesheet" href="styles.css">
-  <style>
-    button {
-      background-color: #007BFF;
-      color: white;
-      border: none;
-      padding: 10px 15px;
-      cursor: pointer;
-      border-radius: 5px;
-    }
-    button:hover {
-      background-color: #0056b3;
-    }
-    ul {
-      margin-left: 20px;
-    }
-  </style>
 </head>
 <body>
   <header>
-    <div class="container" style="display: flex; align-items: center; justify-content: space-between;">
-      <img src="logo1.jpg" alt="" style="width: 100px; height: 100px;">
-      <div style="width: 100%; margin-right: 110px;">
-        <h1 style="color: white;">El Estado Miranda</h1>
+    <div class="logo-container">
+      <img src="logo1.jpg" alt="Universidad" class="logo">
+    </div>
+    <div class="container">
+      <div class="header-content">
+        <h1>El Estado Miranda</h1>
         <nav>
           <ul>
-            <li><a style="color: black;" href="#home">Inicio</a></li>
-            <li><a style="color: black;" href="#about">Acerca de</a></li>
+            <li><a href="#home">Inicio</a></li>
+            <li><a href="#about">Acerca de</a></li>
+            <li><a href="#contact">Contacto</a></li>
           </ul>
         </nav>
       </div>
     </div>
   </header>
+  
 
   <section id="home" class="section">
     <div class="container">
       <h2>Bienvenidos</h2>
-      <p>Bienvenido a nuestro blog dedicado al hermoso estado miranda, uno de los destinos más fascinantes de Venezuela. Es un lugar que ofrece una rica combinación de historia, cultura, naturaleza y modernidad. Desde sus encantadores pueblos coloniales hasta nuestras vibrantes ciudades, pasando por sus impresionantes paisajes naturales, Miranda tiene algo para todos los gustos. En este blog, exploraremos los diversos aspectos que hacen de Miranda un lugar único. Descubriremos su patrimonio cultural, disfrutaremos de sus festividades tradicionales, exploraremos sus parques y reservas naturales, y conoceremos a la gente cálida y acogedora que habita en esta región.</p>
+      <p>
+        Bienvenido a nuestro blog dedicado al hermoso estado Miranda, uno de los destinos más fascinantes de Venezuela. Es un lugar que ofrece una rica combinación de historia, cultura, naturaleza y modernidad. Desde sus encantadores pueblos coloniales hasta nuestras vibrantes ciudades, pasando por sus impresionantes paisajes naturales, Miranda tiene algo para todos los gustos. En este blog, exploraremos los diversos aspectos que hacen de Miranda un lugar único. Descubriremos su patrimonio cultural, disfrutaremos de sus festividades tradicionales, exploraremos sus parques y reservas naturales, y conoceremos a la gente cálida y acogedora que habita en esta región.
+      </p>
     </div>
   </section>
 
   <section id="about" class="section">
     <div class="container">
       <div class="about-item">
-        <img src="image.jpg" alt="andres" class="imagen-andres">
+        <img src="image.jpg" alt="Andrés" class="profile-image">
         <h2>Andrés</h2>
+        <p>
+          Mi nombre es <span>Andrés</span>, soy un apasionado de la informática y me encantan las computadoras. Estudiante de la UTS.
+        </p>
       </div>
       <div class="about-item">
-        <img src="image2.jpg" alt="jhosue" class="imagen-jhosue">
+        <img src="image2.jpg" alt="Jhosue" class="profile-image">
         <h2>Jhosue</h2>
+        <p>
+          ¡Hola! Soy <span>Jhosue</span>, estudiante de la UTS y fanático de las computadoras.
+        </p>
       </div>
       <div class="about-item">
-        <img src="samuel.jpg" alt="samuel" class="imagen-samuel">
+        <img src="samuel.jpg" alt="Samuel" class="profile-image">
         <h2>Samuel</h2>
-      </div>
-    </div>
-
-    <div class="about-item">
-        <p>Mi nombre es <span>Andrés</span>, soy un apasionado a la informática y me encantan las computadoras. Soy estudiante de la UTS.</p>
-    </div>
-    <div class="about-item">
-        <p>¡Hola! Soy <span>Jhosue</span>, estudiante de la UTS y fanático de las computadoras.</p>
-    </div>
-    <div class="about-item">
-        <p>¡Hola! Soy <span>Samuel</span>. Me gusta que me carrean y me dan yupi en bloodstrike.</p>
-    </div>
-  </section>
-
-  <section id="posts" class="section">
-    <div class="container">
-      <h2>Simbolos Patrios</h2>
-      <div class="post">
-        <h3>Colores de la bandera</h3>
-        <p>Los colores de la bandera son.</p>
-        <ul id="extra-info" style="display: none; text-align: left;">
-          <li>Negro: Representa a la raza negra que luchó junto a Francisco de Miranda.</li>
-          <li>Rojo: Representa la sangre derramada en la lucha independentista. También representa a los mulatos, que eran blancos con negros.</li>
-          <li>Amarillo: Representa la ganancia obtenida en la lucha por recuperar el territorio venezolano. Para Francisco de Miranda, este color era un homenaje a los indígenas.</li>
-        </ul>
-        <button id="toggle-btn">Leer más</button>
-      </div>
-      <div class="post">
-        <h3>Mi viaje en la escritura</h3>
-        <p>Compartiré mi experiencia personal como escritor y cómo el blog ha cambiado mi vida.</p>
-        <a href="#">Leer más</a>
+        <p>
+          ¡Hola! Soy <span>Samuel</span>. Me gusta que me carrean y me dan yupi en Bloodstrike.
+        </p>
       </div>
     </div>
   </section>
+
+ <section id="posts" class="section">
+  <div class="container">
+    <h2>El Estado Miranda</h2>
+    <div class="post">
+      <h3>Simbolos Patrios y la Historia de Miranda</h3>
+      <p>
+        El estado Miranda, en honor a Francisco de Miranda, destaca por su bandera y escudo que representan su historia y geografía montañosa, fundado después de la independencia.
+      </p>
+      <a href="Miranda/Miranda.html" class="read-more" target="_blank">Leer más</a>
+    </div>
+    <div class="post">
+      <h3>Mi viaje en la escritura</h3>
+      <p>
+        Compartiré mi experiencia personal como escritor y cómo el blog ha cambiado mi vida.
+      </p>
+      <a href="ejemplo2.html" class="read-more" target="_blank">Leer más</a>
+    </div>
+  </div>
+</section>
 
   <section id="services" class="section">
     <div class="container">
-      <h2>LOREM </h2>
+      <h2>Cuenta cuentos</h2>
       <ul>
+        <li>
+         Yenitza Anseume, destacada narradora, cuentacuentos y promotora cultural del estado Miranda, ha desarrollado su arte en la tradición oral venezolana a través de cuentos que rescatan las raíces culturales y las historias del país. Egresada como Profesora de Artes Escénicas de la Universidad Nacional Experimental Libertador (UPEL-IPC), posee una Maestría y Doctorado en Ciencias de la Educación. Actualmente, se desempeña como Subdirectora de Formación Avanzada en la Universidad Nacional Experimental Simón Rodríguez (UNESR). Su pasión por el teatro y la narración la llevó a fundar el grupo "La Rueda", enfocado en la promoción de la cultura y la tradición oral en los Valles del Tuy, estado Miranda. A través de su labor artística y educativa, Anseume ha contribuido significativamente al enriquecimiento cultural y académico de su comunidad.
+        </li>
         <li>xxx</li>
-        <li>xxx</li>
-        <li>xxx</li>
+        <li>xxxx</li>
       </ul>
     </div>
   </section>
@@ -108,10 +100,13 @@
       <form>
         <label for="name">Nombre:</label>
         <input type="text" id="name" name="name" required>
+
         <label for="email">Correo electrónico:</label>
         <input type="email" id="email" name="email" required>
+
         <label for="message">Mensaje:</label>
         <textarea id="message" name="message" required></textarea>
+
         <button type="submit">Enviar</button>
       </form>
     </div>
@@ -124,19 +119,14 @@
   </footer>
 
   <script>
-
-    const toggleBtn = document.getElementById('toggle-btn');
-    const extraInfo = document.getElementById('extra-info');
-
-    toggleBtn.addEventListener('click', () => {
-      if (extraInfo.style.display === 'none') {
-        extraInfo.style.display = 'block';
-        toggleBtn.textContent = 'Leer menos'; 
+    function toggleContent(id) {
+      const content = document.getElementById(id);
+      if (content.style.display === "none" || content.style.display === "") {
+        content.style.display = "block"; // Muestra el contenido
       } else {
-        extraInfo.style.display = 'none';
-        toggleBtn.textContent = 'Leer más';
+        content.style.display = "none"; // Oculta el contenido
       }
-    });
+    }
   </script>
 </body>
 </html>
