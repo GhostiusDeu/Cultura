@@ -22,7 +22,7 @@ header .logo-container {
 }
 
 header .logo {
-    width: 100px; /* Ajusta el tamaño del logo según sea necesario */
+    width: 100px; 
     height: auto;
     margin-right: 60px;
 }
