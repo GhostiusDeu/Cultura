@@ -25,6 +25,7 @@ header .logo {
     width: 100px; /* Ajusta el tamaño del logo según sea necesario */
     height: auto;
     margin-right: 60px;
+    border-radius: 90px;
 }
 
 header h1 {

@@ -11,6 +11,34 @@ body {
     overflow-x: hidden;
 }
 
+/* Aqui empiezan los bordes laterales xDDD */
+
+body::before, body::after {
+    content: "";
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    width: 17px; 
+    background: linear-gradient(to bottom, #000000, #D40000, #F9D400);
+    z-index: 999; 
+}
+
+body::before {
+    left: 0; 
+}
+
+body::after {
+    right: 0; 
+}  
+
+.container {
+    width: calc(100% - 30px); 
+    margin: 0 auto;
+    padding: 0 15px; 
+} 
+
+/* y por si acaso aquí terminan la parte de los bordes laterales jaja */
+
 .container {
     width: 100%;
     margin: 0 auto;
@@ -18,7 +46,8 @@ body {
 
 .container p {
     line-height: 2;
-} 
+}
+
 
 header {
     background: linear-gradient(to bottom, #000000, #D40000, #F9D400); 
@@ -44,14 +73,14 @@ header .casique {
 header .casique img {
     width: 130px;
     height: auto;
-    border-radius: 100px; /* Aquí agregamos el borde redondeado */
+    border-radius: 100px; 
     margin: 20px 0px 0px 20px;
 }
 
 header .logo-container img {
     width: 130px;
     height: auto;
-    border-radius: 100px; /* Aquí agregamos el borde redondeado */
+    border-radius: 100px; 
     margin: 20px 0px 0px 20px;
 }
 
@@ -296,6 +325,8 @@ footer p {
 #services {
     text-align: center;
     padding-top: 50px;
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 20px; 
 }
 
 #services img {
@@ -304,7 +335,7 @@ footer p {
     margin-right: auto; 
     width: 700px;
     border-radius: 20px;
-    border-style:groove;    
+    border-style:solid;
     border-color: orange;
     border-width: 5px;
 }
@@ -312,7 +343,6 @@ footer p {
 #services li {
     margin-bottom: 20px;
     padding-bottom: 10px;
-    border-bottom: 2px solid #ccc;
     font-size: 1.2rem;
     transition: transform 0.3s ease;
     word-spacing: -1px;
@@ -324,6 +354,85 @@ footer p {
 #services li:hover {
     transform: translateX(10px);
     color: #1774ee;
+}
+
+/* Estilo para la sección de Contacto */
+#contact {
+    background-color: #f9f9f9; /* Color de fondo suave */
+    padding: 50px 20px;
+    text-align: center; /* Alineación central del texto */
+}
+
+#contact h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+#contact p {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 30px;
+    line-height: 1.8;
+}
+
+#contact form {
+    display: flex;
+    flex-direction: column; /* Organización vertical */
+    align-items: center; /* Centrado horizontal */
+    margin: 0 auto;
+    max-width: 500px; /* Ancho máximo para el formulario */
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+#contact form input,
+#contact form textarea {
+    width: 90%; /* Ancho del 90% para mantener el espacio en los bordes */
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    transition: border 0.3s ease, box-shadow 0.3s ease;
+}
+
+#contact form input:focus,
+#contact form textarea:focus {
+    border-color: #1774ee;
+    box-shadow: 0 0 8px rgba(23, 116, 238, 0.5);
+    outline: none;
+}
+
+#contact form button {
+    width: 90%;
+    padding: 12px;
+    background-color: #1774ee;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+#contact form button:hover {
+    background-color: #0cbde9;
+}
+
+#nosotros {
+    background-color: #f9f9f9; 
+    padding: 20px 20px;
+    text-align: center;
+}
+
+#nosotros h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 0px;
+    font-weight: bold;
 }
 
 @media (max-width: 768px) {

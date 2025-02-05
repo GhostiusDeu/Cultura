@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Descubre Miranda</title>
+    <link rel="stylesheet" href="informacion.css">
+    <style>
+        /* Animación de entrada con scroll */
+        @keyframes fadeInOnScroll {
+            0% {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Estilo para los elementos que estarán animados */
+        .animate-on-scroll {
+            opacity: 0;
+            transform: translateY(50px);
+            transition: opacity 1s ease, transform 1s ease;
+        }
+
+        /* Cuando el elemento entra en la vista, se aplica la animación */
+        .in-view {
+            opacity: 1;
+            transform: translateY(0);
+            animation: fadeInOnScroll 1s ease-out forwards;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="../logo1.png" alt="Logo de la Universidad" class="logo">
+        </div>
+        <div class="container">
+            <h1>Estado Miranda</h1>
+            <p>Tradición, Cultura y Sabor</p>
+        </div>
+    </header>
+
+    <main>
+        <section id="gastronomia" class="animate-on-scroll">
+            <div class="section-header">
+                <h2>Gastronomía de Miranda</h2>
+                <p>Los sabores de Miranda son únicos y variados, con una influencia significativa de sus tradiciones. Estos son algunos de los platos más representativos:</p>
+            </div>
+            <div class="gastronomia-items">
+                <div class="item">
+                    <h3>Sancocho y Hervido de Pescado</h3>
+                    <p>Un delicioso caldo con pescado, vegetales y tubérculos.</p>
+                </div>
+                <div class="item">
+                    <img src="img/catedral.jpg" alt="Catedral">
+                    <h3>Pescado Frito</h3>
+                    <p>Un clásico de la costa mirandina, servido con acompañantes como tostones.</p>
+                </div>
+                <div class="item">
+                    <img src="img/catedral.jpg" alt="Catedral">
+                    <h3>Lebranche Asado</h3>
+                    <p>Pescado asado con hierbas y condimentos, servido en su punto justo.</p>
+                </div>
+                <div class="item">
+                    <img src="img/catedral.jpg" alt="Catedral">
+                    <h3>Asado Negro</h3>
+                    <p>Carne de res cocinada a fuego lento con una salsa oscura y sabrosa.</p>
+                </div>
+                <div class="item">
+                    <img src="img/catedral.jpg" alt="Catedral">
+                    <h3>Mondongo Mirandino</h3>
+                    <p>Un guiso espeso hecho con tripas y verduras, ideal para el clima frío.</p>
+                </div>
+                <div class="item">
+                    <img src="img/catedral.jpg" alt="Catedral">
+                    <h3>Fufú</h3>
+                    <p>Un plato a base de yuca o plátano, muy popular en las familias mirandinas.</p>
+                </div>
+            </div>
+        </section>
+        
+        <section id="religiones" class="animate-on-scroll">
+            <div class="container">
+                <h2>Religiones de Miranda</h2>
+                <p>El Estado Miranda es hogar de una diversidad religiosa que influye en su vida cotidiana.</p>
+                <div class="grid">
+                    <div class="item">
+                        <img src="img/catedral.jpg" alt="Catedral">
+                        <h3>Iglesia Católica</h3>
+                        <p>Con una rica tradición histórica y cultural.</p>
+                    </div>
+                    <div class="item">
+                        <img src="img/templo.jpg" alt="Templo">
+                        <h3>Protestantismo</h3>
+                        <p>Una fe creciente que también ha marcado el paisaje cultural.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="dulces" class="animate-on-scroll">
+            <div class="container">
+                <h2>Dulces Típicos de Miranda</h2>
+                <p>El dulce sabor de la tradición se encuentra en estos deliciosos postres.</p>
+                <div class="grid">
+                    <div class="item">
+                        <img src="img/torrejas.jpg" alt="Torrejas">
+                        <h3>Torrejas</h3>
+                        <p>Un manjar suave y esponjoso que te enamorará.</p>
+                    </div>
+                    <div class="item">
+                        <img src="img/cafunga.jpg" alt="Cafunga">
+                        <h3>Cafunga</h3>
+                        <p>El delicioso flan de la tradición venezolana.</p>
+                    </div>
+                    <div class="item">
+                        <img src="img/facunda.jpg" alt="Facunda">
+                        <h3>Facunda</h3>
+                        <p>Un postre hecho a base de maíz con un toque único.</p>
+                    </div>
+                    <div class="item">
+                        <img src="img/conservacoco.jpg" alt="Conserva de Coco">
+                        <h3>Conserva de Coco</h3>
+                        <p>Un dulce hecho con coco rallado y azúcar, perfecto para los amantes del coco.</p>
+                    </div>
+                    <div class="item">
+                        <img src="img/golfeados.jpg" alt="Golfeados">
+                        <h3>Golfeados</h3>
+                        <p>Pan dulce con un toque de miel y anisado, ¡un placer para el paladar!</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="cultura" class="animate-on-scroll">
+            <div class="container">
+                <h2>Cultura y Tradiciones de Miranda</h2>
+                <p>Las costumbres de Miranda son una mezcla de historia y modernidad.</p>
+                <div class="grid">
+                    <div class="item">
+                        <img src="img/palmeros.jpg" alt="Palmeros de Chacao">
+                        <h3>Palmeros de Chacao</h3>
+                        <p>Tradición declarada Patrimonio Cultural Inmaterial de la Humanidad por la UNESCO.</p>
+                    </div>
+                    <div class="item">
+                        <img src="img/diablos.jpg" alt="Diablos Danzantes de Yare">
+                        <h3>Diablos Danzantes de Yare</h3>
+                        <p>Expresión de fe y colorido en honor al Corpus Christi.</p>
+                    </div>
+                    <div class="item">
+                        <img src="img/sanjuan.jpg" alt="Fiesta de San Juan de Curiepe">
+                        <h3>Fiesta de San Juan de Curiepe</h3>
+                        <p>Celebración vibrante con tambores y danzas afrovenezolanas.</p>
+                    </div>
+                    <div class="item">
+                        <img src="img/sanpedro.jpg" alt="Parranda de San Pedro">
+                        <h3>Parranda de San Pedro</h3>
+                        <p>Patrimonio cultural que refleja la devoción y el folclore popular.</p>
+                    </div>
+                    <div class="item">
+                        <img src="img/pacairigua.jpg" alt="Santísima Cruz de Pacairigua">
+                        <h3>Santísima Cruz de Pacairigua</h3>
+                        <p>Tradición religiosa que reúne fe, música y danzas populares.</p>
+                    </div>
+                    <div class="item">
+                        <img src="img/santosinocentes.jpg" alt="Parranda de los Santos Inocentes de Caucagua">
+                        <h3>Parranda de los Santos Inocentes de Caucagua</h3>
+                        <p>Festividad que mezcla sátira, humor y tradición popular.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="musica" class="animate-on-scroll">
+            <div class="container">
+                <h2>Instrumentos Musicales de Miranda</h2>
+                <p>La música es parte esencial de la vida en Miranda, con instrumentos tradicionales únicos.</p>
+                <div class="grid">
+                    <div class="item">
+                        <img src="img/furruco.jpg" alt="Furruco">
+                        <h3>El Furruco</h3>
+                        <p>Instrumento de percusión que emite sonidos graves, esencial en la música tradicional.</p>
+                    </div>
+                    <div class="item">
+                        <img src="img/maracas.jpg" alt="Maracas">
+                        <h3>Las Maracas</h3>
+                        <p>Instrumento de ritmo que aporta un sonido característico a la música venezolana.</p>
+                    </div>
+                    <div class="item">
+                        <img src="img/bandola.jpg" alt="Bandola Llanera">
+                        <h3>La Bandola Llanera</h3>
+                        <p>Instrumento de cuerdas que resalta en los joropos y tonadas tradicionales.</p>
+                    </div>
+                    <div class="item">
+                        <img src="img/cuatro.jpg" alt="Cuatro">
+                        <h3>El Cuatro</h3>
+                        <p>El alma de la música venezolana, un instrumento de cuerdas fundamental en el folclore.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p> Cultura</p>
+    </footer>
+
+    <script>
+        // Esta parte de aqui detecta por si hay algo a la vista 
+        function isElementInView(el) {
+            const rect = el.getBoundingClientRect();
+            return (
+                rect.top >= 0 &&
+                rect.left >= 0 &&
+                rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+                rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+            );
+        }
+
+        // Esta funcion llama la animacion de scroll asi que mosquita no borrarla por que altera el CSS :(
+        function handleScrollAnimation() {
+            const elements = document.querySelectorAll('.animate-on-scroll');
+            elements.forEach((element) => {
+                if (isElementInView(element)) {
+                    element.classList.add('in-view');
+                }
+            });
+        }
+
+        window.addEventListener('scroll', handleScrollAnimation);
+
+        // Ejecuta la función de una vez para los elementos ya visibles al cargar la página (hasta aqui llega mi conocimiento en JS valoren por favor) :( 
+        document.addEventListener('DOMContentLoaded', handleScrollAnimation);
+    </script>
+</body>
+</html>

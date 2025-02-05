@@ -1,0 +1,420 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.8;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #000000, #D40000, #F9D400); 
+    color: #333;
+}
+
+/* Animación de fondo */
+@keyframes gradientBackground {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+body {
+    background: linear-gradient(270deg, #000000, #D40000, #F9D400);
+    background-size: 600% 600%;
+    animation: gradientBackground 15s ease infinite;
+}
+
+
+/* Estilo del Header */
+header {
+    background: linear-gradient(to right, #FF4500, #FFD700);
+    padding: 30px;
+    text-align: left; /* Cambiar a left para alinear el texto a la izquierda */
+    color: white;
+    animation: fadeIn 2s ease-out, slideDown 1s ease-out;
+    display: flex;
+    align-items: center; /* Centra verticalmente el contenido */
+}
+
+header .logo {
+    width: 100px; 
+    height: auto;
+    border-radius: 90px;
+}
+
+
+header .logo h1 {
+    margin-bottom: 10px; /* Espacio debajo del título */
+}
+
+header .logo p {
+    font-size: 1.5rem;
+    animation: textPop 1.5s ease-in-out 0.5s;
+}
+
+/* Animaciones */
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+@keyframes slideDown {
+    0% { transform: translateY(-100%); }
+    100% { transform: translateY(0); }
+}
+
+@keyframes textPop {
+    0% { transform: scale(0.8); opacity: 0; }
+    100% { transform: scale(1); opacity: 1; }
+}
+
+main {
+    padding: 50px 20px;
+}
+
+section {
+    margin-bottom: 50px;
+    animation: fadeInUp 1s ease-out;
+}
+
+h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #333;
+    animation: textPop 1s ease-out;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+h1 {
+    text-align: center;
+    padding-right: 10%;
+}
+
+p {
+    text-align: center;
+    padding-right: 10%;
+}
+
+/* Estilo del grid */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.item {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    animation: fadeInUp 1s ease-out;
+}
+
+.item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.item:hover img {
+    transform: scale(1.1);
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+#gastronomia h2, #religiones h2, #dulces h2, #cultura h2, #musica h2 {
+    color: white;
+}
+
+#gastronomia {
+    padding: 50px 20px;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+#gastronomia h2 {
+    font-size: 2.5rem;
+    color: white;
+    background-color: #1774ee;
+    padding: 20px;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    animation: textPop 1s ease-out;
+}
+
+.gastronomia-items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 0 20px;
+}
+
+.gastronomia-items .item {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gastronomia-items .item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.gastronomia-items .item h3 {
+    font-size: 1.6rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.gastronomia-items .item p {
+    color: #666;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+#dulces {
+    padding: 50px 20px;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+#dulces h2 {
+    font-size: 2.5rem;
+    color: white;
+    background-color: #d47b16;
+    padding: 20px;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    animation: textPop 1s ease-out;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 0 20px;
+}
+
+.grid .item {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.grid .item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.grid .item h3 {
+    font-size: 1.6rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.grid .item p {
+    color: #666;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.grid .item img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+#cultura {
+    padding: 50px 20px;
+    background-color: #ececec;
+    text-align: center;
+}
+
+#cultura h2 {
+    font-size: 2.5rem;
+    color: #ffffff;
+    background-color: #4a90e2;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+    animation: textPop 1s ease-out;
+}
+
+#cultura p {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 0 15px;
+}
+
+.grid .item {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+}
+
+.grid .item:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.grid .item img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px 8px 0 0;
+}
+
+.grid .item h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin: 15px 0 10px;
+}
+
+.grid .item p {
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.5;
+}
+
+#musica {
+    background-color: #222; 
+    color: #fff;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+#musica .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+#musica .item {
+    background: #333;
+    padding: 20px;
+    border-radius: 15px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+#musica .item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.6);
+}
+
+#musica img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+#musica h3 {
+    margin: 15px 0 10px;
+    font-size: 1.5em;
+    color: #FFD700;
+}
+
+#musica p {
+    font-size: 1em;
+    color: #ccc;
+}
+
+
+
+/* Media queries para pantallas más pequeñas */
+@media (max-width: 768px) {
+    .grid, .gastronomia-items {
+        grid-template-columns: 1fr; /* Un solo bloque para mejor legibilidad */
+    }
+
+    header {
+        padding: 20px;
+    }
+
+    h2 {
+        font-size: 1.8rem; /* Tamaño de texto más cómodo */
+    }
+
+    .item {
+        padding: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 10px; /* Pequeño margen para que no quede pegado a los bordes */
+    }
+
+    header .logo h1 {
+        font-size: 2rem; /* Reducir el tamaño del logo */
+    }
+
+    .container {
+        width: 100%;
+        padding: 0 10px;
+    }
+}
+
+@keyframes fadeInOnScroll {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animate-on-scroll {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 1s ease, transform 1s ease;
+}
+
+
+.in-view {
+    opacity: 1;
+    transform: translateY(0);
+    animation: fadeInOnScroll 1s ease-out forwards;
+}
+
+
