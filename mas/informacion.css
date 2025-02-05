@@ -31,11 +31,11 @@ body {
 header {
     background: linear-gradient(to right, #FF4500, #FFD700);
     padding: 30px;
-    text-align: left; /* Cambiar a left para alinear el texto a la izquierda */
+    text-align: left;
     color: white;
     animation: fadeIn 2s ease-out, slideDown 1s ease-out;
     display: flex;
-    align-items: center; /* Centra verticalmente el contenido */
+    align-items: center; 
 }
 
 header .logo {
@@ -102,7 +102,7 @@ p {
     padding-right: 10%;
 }
 
-/* Estilo del grid */
+
 .grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -359,10 +359,9 @@ footer {
 
 
 
-/* Media queries para pantallas más pequeñas */
 @media (max-width: 768px) {
     .grid, .gastronomia-items {
-        grid-template-columns: 1fr; /* Un solo bloque para mejor legibilidad */
+        grid-template-columns: 1fr; 
     }
 
     header {
@@ -370,7 +369,7 @@ footer {
     }
 
     h2 {
-        font-size: 1.8rem; /* Tamaño de texto más cómodo */
+        font-size: 1.8rem; 
     }
 
     .item {
@@ -380,11 +379,11 @@ footer {
 
 @media (max-width: 480px) {
     body {
-        padding: 10px; /* Pequeño margen para que no quede pegado a los bordes */
+        padding: 10px; /
     }
 
     header .logo h1 {
-        font-size: 2rem; /* Reducir el tamaño del logo */
+        font-size: 2rem; 
     }
 
     .container {
